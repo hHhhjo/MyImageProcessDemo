@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ljd.myimageprocessdemo.MainActivity">
+    <RelativeLayout
+        android:id="@+id/ly_img_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <ImageView
+            android:id="@+id/img_view_ori"
+            android:background="#333333"
+            android:layout_alignParentStart="true"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/img_view_rev"
+            android:background="#333333"
+            android:layout_alignParentEnd="true"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ly_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/bt_get_from_sd"
+            android:text="本地获取"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bt_get_from_net"
+            android:text="网络获取"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bt_reverse"
+            android:text="颜色反转"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
