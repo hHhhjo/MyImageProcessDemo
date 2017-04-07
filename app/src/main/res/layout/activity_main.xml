@@ -46,9 +46,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/bt_get_from_gallery"
+            android:text="相册获取"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
             android:id="@+id/bt_reverse"
             android:text="颜色反转"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_save"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 </RelativeLayout>
